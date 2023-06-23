@@ -1,0 +1,212 @@
+.test-problem, .test-solution{
+    font-size: 1vw;
+    padding: 0 5% 0 5%;
+    display: inline-flex;
+    color: white;
+}
+.test-problem{    
+    text-align: center;
+    width: 100%;
+}
+.test-problem :first-child{
+    padding-right: 10px;
+    color: #000;
+}
+.test-problem-detail{    
+    width: 90%;
+    margin: auto;
+    font-size: 1.2vw;
+}
+.test-roll-caption{
+    text-align: center;
+    padding: 10% 0 0 0;
+    color: #4b38b3;
+}
+.test-detail{
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: auto;
+    width: 60%;
+    color: #000;
+}
+.test-field-img{
+    padding: 0 10%;    
+    opacity: 0.9;
+}
+.f-3{
+    font-size: 1vw;
+}
+.purchase-setting-header{
+    background-color: none;
+}
+.purchase-setting-header h5{
+    color: #4b38b3;
+    position: relative;
+    font-size: 26px;
+    left: 33%;
+    bottom: 10px;
+}
+.purchase-setting-header button{
+    display: none;
+}
+.purchase-setting-header h5 button{
+    color: white;
+    position: relative;
+    left: 175px;
+}
+.purchase-pro-setting, .purchase-button-group{
+    margin: 0 100px;
+}
+.purchase-pro-setting p{
+    display: inline;
+    float: right;
+    margin: 0;
+}
+.purchase-pro-setting span{
+    float: left;
+}
+.purchase-border-bottom{
+    border-bottom: 1px solid dotted #4b38b3;
+}
+.self-item-center td span, .self-item-center th span, .view-data-pagination{
+    justify-content: center !important;
+    display: flex;
+}
+.self-item-center td span{
+    border-left: 1px solid lightgrey;
+}
+.self-item-center tr{
+    height: 4vw;
+}
+.self-item-center td{
+    padding-right: 0;
+    padding-left: 0;
+}
+.ri-user-line-customize{
+    background-color: rgb(123 120 126);
+    font-size: 1.5vw;
+    border-radius: 25px;
+    color: #e9e8e8;
+}
+.addtional-item{    
+    position: absolute;
+    right: 6vw;
+    bottom: 0.5vw;
+}
+.vote-new-data h6, .vote-new-data select, .vote-new-data input, .sort-vote-data{
+    display: inline-block;
+}
+.vote-new-data h6{
+    padding-right: 20px;
+}
+.purchase-button-group{
+    text-align: right;
+}
+.margin-top-custom{
+    margin-top: 20%;
+}
+.test-page-item h2{
+    font-size: 3vw;
+}
+.test-problems-detail{
+    position: relative;
+}
+.display-change-detail{
+    position: relative;
+    height: 150%;
+}
+.display-change-button{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+/* view data page */
+.all-data-list tr, .all-data-list td{
+    align-self: center;
+    text-align: center;
+}
+.all-data-list td p{
+    margin-top: 27px;
+    /* border-right: 1px solid lightgrey; */
+}
+.all-data-list td:last-child p{
+    border: none;
+}
+.all-data-list td{
+    padding: 10px 0;
+}
+.all-data-list thead tr{
+    /* border-bottom:  1px solid lightgrey; */
+    background-color: rgb(247, 245, 245);
+}
+.img-item{
+    height: 20px;
+}
+.img-item img{
+    position: relative;
+    top: -30px;
+}
+
+.overflow-hidden{
+    overflow: hidden;
+}
+
+.tbody-style{
+    position: relative;
+    top: 20px;
+}
+.select-title-customer{    
+    background-color: #1549f175;
+    width: max-content;
+    padding: 5px 40px;
+    border-radius: 7px;
+    color: white;
+}
+
+
+/* test problem display */
+.btn-customize:hover {
+    color: #000;
+    border-color: #4b38b3;
+}
+.btn-check:checked + .btn-customize, .btn-customize.dropdown-toggle.show {
+    color: #fff;
+    background-color: #4b38b3;
+    border-color: #4b38b3;
+}
+.btn-customize {
+    color: #000;
+}
+.content{
+    margin-top: 7vh;
+    height: 82vh;
+}
+.select-level-content{    
+    min-height: calc(100vh - 160px);
+}
+.test-start-btn{     
+    position: absolute;
+    right: 0;
+    bottom: 10%;
+}
+.select-level-group-btn {
+    margin-top: 10%;
+}
+@media screen and (max-height: 800px) {
+    .select-level-group-btn {
+        margin-top: 4%;
+    }
+
+    .content{
+        margin-top: 2vh;
+    }
+    
+.custom-next-btn{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+  }

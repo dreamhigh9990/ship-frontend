@@ -1,0 +1,51 @@
+.ca-background{
+  /* position: absolute; */
+  width: 100%;
+  height: 600px;
+  z-index: 10;
+}
+.ca-title{
+  position: relative;
+  z-index: 12;
+}
+.hero-section{
+padding-top:100px;
+}
+.background{
+    background-image: url(./assets/background1.png);
+    background-repeat: no-repeat;
+    /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); */
+}
+
+.home-slide-title {
+  font-size: 4rem;
+  color: white
+}
+.home-slide-sub-title {
+  font-size: 1.2rem;
+}
+.text-white {
+  color: white;
+}
+.slide-content-wrapper {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-left: 100px
+}
+.background-overlay {
+  background-color: #101010;
+  opacity: 0.4;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  top: 0px;
+  left: 0px;
+}
+.slide-inner-wrapper {
+  z-index: 1;
+  margin: 0 24px;
+}

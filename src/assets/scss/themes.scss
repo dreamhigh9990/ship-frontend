@@ -1,0 +1,325 @@
+@import "../scss/icons.scss";
+@import "../scss/config/material/bootstrap.scss";
+@import "../scss/config/material/app.scss";
+@import "../scss/config/material/custom.scss";
+@import"./shepherd.css";
+@import "./mermaid.min.css";
+@import './styles1.css';
+//RTL
+// @import "../scss/rtl/components-rtl";
+// @import "../scss/rtl/layouts-rtl";
+// @import "../scss/rtl/plugins-rtl";
+// @import "../scss/rtl/pages-rtl";
+
+//Rigthsidebar offcanvas
+.offcanvas-header-dark {
+  .btn-close {
+    filter: invert(1) grayscale(100%) brightness(200%);
+  }
+}
+
+body {
+  * {
+    outline: none;
+  }
+}
+.noUi-horizontal .noUi-handle {
+  height: 16px !important;
+  width: 16px !important;
+  border-radius: 50% !important;
+  right: -10px !important;
+  top: -7px !important;
+}
+.noUi-connect,
+.noUi-horizontal {
+  height: 2px !important;
+}
+.noUi-handle {
+  background: #0ab39c !important;
+  border: 2px solid var(--vz-card-bg) !important;
+  -webkit-box-shadow: none !important;
+  box-shadow: none !important;
+}
+.noUi-target {
+  background: #fafafa !important;
+  border-radius: 4px !important;
+  border: 1px solid #d3d3d3 !important;
+  background-color: var(--vz-light) !important;
+  border-color: var(--vz-light) !important;
+  box-shadow: none !important;
+  height: 4px !important;
+}
+.dropzone .dz-message {
+  text-align: center;
+}
+
+// //Calendar
+.fc-direction-ltr .fc-daygrid-event.fc-event-end,
+.fc-direction-rtl .fc-daygrid-event.fc-event-start {
+  padding: 5px !important;
+  font-size: 12px !important;
+  margin-right: 2px;
+}
+.fc-event {
+  border: none !important;
+}
+
+@include media-breakpoint-down(sm) {
+  .fc-toolbar {
+    display: block !important;
+    text-align: center;
+    .fc-left,
+    .fc-right,
+    .fc-center {
+      float: none;
+      display: block;
+      clear: both;
+      margin: 10px 0;
+    }
+  }
+  .fc {
+    .fc-toolbar {
+      > * {
+        > * {
+          float: none;
+        }
+      }
+    }
+  }
+  .fc-today-button {
+    display: none;
+  }
+}
+.flatpickr-calendar.open {
+  z-index: 1090 !important;
+}
+.upcoming-scheduled .flatpickr-input[readonly] {
+  display: none;
+}
+.ql-container.ql-snow {
+  height: 250px;
+}
+.rangeslider-horizontal .rangeslider__fill {
+  background-color: #405189 !important;
+}
+
+.Toastify__toast{
+  min-height: 43px !important;
+  max-height: 43px !important;
+}
+
+
+@each $color, $value in $theme-colors {
+  .simplebar-track-#{$color} {
+    .simplebar-scrollbar:before{
+      background: $value !important; 
+    }
+  }   
+}
+
+.btn-close{
+  box-shadow: none;
+}
+
+// swiper
+
+.swiper-button-next, .swiper-button-prev{
+  background-color: $card-bg;
+  box-shadow: $box-shadow;
+}
+// input step
+
+.input-step{
+  .form-control{
+    background-color: $input-bg;
+  }
+  &.light{
+    .form-control{
+      background-color: $light;
+    }
+  }
+}
+
+// chat
+
+.chat-conversation .chat-list .message-box-drop{
+  .nav-btn{
+      font-size: 18px;
+      padding: 4px;
+      color: $gray-600;
+  }
+}
+
+// authentication
+
+#tsparticles{
+  canvas{
+    position: absolute !important;
+  }
+}
+
+.nav-pills .nav-link {
+  background-color: white;
+}
+.wrap-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+main {
+  flex: 1;
+}
+.table-per-page {
+    position: absolute;
+    bottom: 16px;
+    left: 64px;
+    width:70px;
+}
+#score-manage-field span {
+  width: 180px
+}
+.bg-trans {
+  background: transparent;
+}
+.my-img-select  .avatar-xl:hover {
+  position: relative;
+  transform: translateY(-2px);
+  z-index: 1;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+.my-img-select .avatar-xl{
+  width: 5rem;
+  height: auto;
+}
+.my-img-select .img-buy {
+    border: 3px solid var(--vz-topnav-item-color-active);
+}
+
+.navbar-landing, .bread-banner {
+  height: 80px;
+}
+.bread-banner {
+  position: relative;
+  margin-top: 80px;
+}
+.question-table th.gridjs-th, .question-table td.gridjs-td{
+  border-top: 0px solid;
+  border-left: 0px solid;
+  border-right: 0px solid;
+}
+.question-table .gridjs-wrapper {
+  border: 0px;
+}
+.question-table thead {
+  display: none;
+}
+.question-table .avatar-xl {
+  width: 90px;
+  height: auto;
+}
+.question-table tr:first-child {
+  border-top: 1px solid var(--vz-border-color);
+}
+.question-table [data-column-id="namedetail"] {
+  width:10%
+}
+.question-table [data-column-id="vote"] {
+  width:5%
+}
+.question-article-sel a{
+  font-size: 0.8rem;
+  border : 1px solid #dedede;
+  padding: 3px; 
+  width: 80%;
+  margin-bottom: 10px;
+  text-align: center;
+  font-weight: 600;
+  color: black
+}
+.question-vot-sel a {
+  font-size: 0.8rem;
+  width: 200px;
+  margin-bottom: 10px;
+  text-align: center;
+  font-weight: 600;
+  color: black
+}
+.notification-pan {
+  transform: translateY(-32px);
+}
+.notification-question-g .card {
+  border: 1px solid rgba(0, 0, 0, 0.125)
+}
+.new-article-modal .sort {
+  width: 40%
+}
+.new-article-modal .form-label {
+  width: 80px;
+}
+.blog-table-content thead {
+  display: none;
+}
+.boder-bot-none {
+  border-bottom: 0px;
+}
+.blog-content-wrapper .author-img {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  margin-right: 6px;
+}
+
+.blog-content-wrapper .blog-detail-img {
+  width: 112px;
+  height: auto;
+}
+.blog-content-wrapper .blog-content {
+  width: 70%;
+}
+.blog-content-wrapper .blog-title {
+  font-size: 22px;
+  font-weight: 700;
+}
+.blog-content-wrapper .blog-detail {
+  font-size: 16px;
+  font-weight: 400;
+  color: var(--vz-body-color);
+}
+.blog-table-content td {
+  padding-bottom: 30px;
+  border-top: 0px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.125);
+}
+.blog-table-content tbody {
+  border: 0px !important;
+}
+.realted-topic a {
+  margin: 10px 4px;
+}
+.blog-table-content tbody > tr:last-child td {
+  border-bottom: 0px;
+}
+.full-tab-table {
+  margin-left: -1.5rem;
+  margin-right: -1.5rem;
+  margin-top: -2rem;
+}
+.boder-b-x {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.125)
+}
+// blog detail
+.blog-detail-rtable-content td {
+  border-bottom: 0px;
+}
+.blog-detail-rtable-content thead, .blog-detail-rtable-content th {
+  background: transparent !important;
+}
+.new-article-add-btn {
+  position: absolute;
+  right: 10px;
+  top: 6px;
+}
+.border-top {
+  border-top: 1px solid var(--vz-border-color);
+}
